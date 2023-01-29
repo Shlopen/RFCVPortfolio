@@ -1,0 +1,75 @@
+body{
+    background-color: #262626;
+    color: #EAF6F6;
+    text-align: center;
+}
+
+h1, h5{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+p{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+div{
+    text-align: center;
+}
+
+#wip{
+    background-color: #262626;
+    color: #EAF6F6;
+}
+
+.wipimg{
+    margin: auto;
+    position: relative;
+    padding: 2%;
+    height: auto;
+    width: 25%;
+}
+
+#projectcarousel{
+    background-color: #262626;
+}
+
+.carousel-item{
+    text-align: center;
+}
+
+.carouselLogo{
+    display: block;
+    margin: auto;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    width: 65%;
+}
+
+.cvsum-text{
+    text-align: justify;
+}
+
+.navbar{
+    background-color: #ff5303;
+    color: #262626;
+    position: sticky;
+} 
+
+.footer-icon{
+    height: 10px;
+    width: 10px;
+}
+.footer-link{
+    text-decoration: none;
+    color: #11999E;
+}
+.footnote{
+    color: #EAF6F6;
+    font-size: 0.75em;
+    padding: 20px 0 0 20px;
+}
