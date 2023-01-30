@@ -28,7 +28,7 @@ div{
 .wipimg{
     margin: auto;
     position: relative;
-    padding: 2%;
+    padding: 4% 2% 1% 2%;
     height: auto;
     width: 25%;
 }
@@ -46,19 +46,54 @@ div{
     margin: auto;
 }
 
-.carousel-control-prev, .carousel-control-next{
-    width: 65%;
+.img-link{
+    text-decoration: none;
+    color: #EAF6F6;
+    font-size: 1.25rem;
+    transition-timing-function: ease;
+    transition: font-size 0.5s;
+}
+.img-link:hover{
+    font-size: 1.75rem;
+}
+.carousel-control-prev{
+    left: 25%;
+}
+.carousel-control-next{
+    right: 25%;
 }
 
 .cvsum-text{
     text-align: justify;
 }
 
+.cv-card{
+    margin: auto;
+    border-color: #ff5303;
+}
+.cv-card-bg{
+    border-color: #ff5303;
+    background-color: #262626;
+}
+
+
 .navbar{
     background-color: #ff5303;
     color: #262626;
-    position: sticky;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
 } 
+
+.navbar-brand{
+    margin-left: 2.5rem;
+    font-weight: bold;
+    color: #EAF6F6;
+}
+
+.navbar-link{
+    color: #EAF6F6;
+}
 
 .footer-icon{
     height: 10px;
