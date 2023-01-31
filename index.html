@@ -8,11 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/81a9cbd299.js" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Custom CSS-->
     <link rel="stylesheet" href="css/styles.css">
-</head>
+
+  </head>
 <body>
     
   <!--Navbar-->
@@ -37,7 +40,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CV</a>
+            <a class="nav-link" href="files/RFCV.pdf">CV</a>
           </li>
           <!--
           <li class="nav-item">
@@ -61,7 +64,7 @@
       <h1>
         Website in the works.
       </h1>
-      <p>In the meantime, check out some stuff I made.</p>
+      <p> In the meantime, check out some stuff I made.</p>
     </div>
   </section>
 
@@ -125,18 +128,18 @@
             <p>I believe a productive learning experience comes from a professional environment, therefor I am motived to perform my future tasks and start a new chapter in my career.</p>
           </div> 
           <div class="col cv-card">
-            <div class="card cv-card" style="width: 18rem;">
+            <div class="card cv-card cv-card-trigger" style="width: 18rem;">
               <div class="card-header text-bg-dark cv-card-bg">
-                Give these a look. 👀
+                <h3>Give these a look.</h3> <h3 id="cv-card-eyes">👀</h3>
               </div>
               <!--CARD-->
               <ul class="list-group list-group-flush">
                 <!--CV -->
-                <li class="list-group-item text-bg-dark cv-card-bg"> <a href="files/RFCV.pdf">My CV</a></li>
+                <li class="list-group-item cv-card-bg"> <a href="files/RFCV.pdf">My CV</a></li>
                 <!--CERTIFICATES DROPDOWN-->
-                <li class="list-group-item text-bg-dark cv-card-bg">Certificates</li>
+                <li class="list-group-item cv-card-bg">Certificates</li>
                 <!--TECH STACK-->
-                <li class="list-group-item text-bg-dark cv-card-bg">Tech Stack</li>
+                <li class="list-group-item cv-card-bg">Tech Stack</li>
               </ul>
             </div>
           </div>
@@ -158,14 +161,14 @@
 
   <section >
     <div id="contactinfo">
-      <h2>Get In Touch</h2>
-      <a class="btn btn-secondary" href="mailto:ruifariaesas@gmail.com">E-mail</a>
-      <a class="btn btn-secondary" href="https://www.linkedin.com/in/rui-faria-068886214/">LinkedIn</a>
-      <a class="btn btn-secondary" href="https://github.com/Shlopen/RFCVPortfolio">GitHub</a>
+      <h2>Get in touch</h2>
+      <a class="btn contactinfo-button" href="mailto:ruifariaesas@gmail.com"><i class="contact-icon fa-solid fa-envelope"></i></a>
+      <a class="btn contactinfo-button" href="https://www.linkedin.com/in/rui-faria-068886214/"><i class="contact-icon fa-brands fa-linkedin"></i></a>
+      <a class="btn contactinfo-button" href="https://github.com/Shlopen/RFCVPortfolio"><i class="contact-icon fa-brands fa-github"></i></a>
     </div>
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
-  <!-- <script src="index.js"></script> -->
+
 </body>
 </html>
