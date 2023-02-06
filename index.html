@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Website</title>
+    <title>RF Portfolio</title>
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,7 @@
 
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+            <a class="nav-link dropdown-toggle nav-link-sel" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
             <ul class="dropdown-menu ">
               <li><a class="dropdown-item" href="https://shlopen.github.io/RFCVPortfolio/Dicee%20roller/dicee.html">Dicee roller</a></li>
               <li><a class="dropdown-item" href="https://shlopen.github.io/RFCVPortfolio/Drum%20Kit/index.html">Interactive drum kit</a></li>
@@ -40,7 +40,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="files/RFCV.pdf">CV</a>
+            <a class="nav-link nav-link-sel" href="files/RFCV.pdf">CV</a>
           </li>
           <!--
           <li class="nav-item">
@@ -48,7 +48,7 @@
           </li>
           -->
           <li class="nav-item">
-            <a class="nav-link" href="#contactinfo">Contact</a>
+            <a class="nav-link nav-link-sel" href="#contactinfo">Contact</a>
           </li>
         </ul>
 
@@ -121,21 +121,21 @@
       <div class="container text-center">
         <div class="row align-items-start">    
           <div class="col cvsum-text"> 
-            <h1>Who am I?</h1>
+            <h1 class="hidden">Who am I?</h1>
             
-            <p>Over 3 years experience as an engineering technician using Siemens’s technology to develop solutions and respond to clients' necessities.</p>
-            <p>I am currently searching for a position where I can collaborate with a team to achieve a common goal, develop new skills in the field of web development and contribute with my coding experience, solution development and communication skills.</p>
-            <p>I believe a productive learning experience comes from a professional environment, therefor I am motived to perform my future tasks and start a new chapter in my career.</p>
+            <p class="hidden">Over 3 years experience as an engineering technician using Siemens’s technology to develop solutions and respond to clients' necessities.</p>
+            <p class="hidden">I am currently searching for a position where I can collaborate with a team to achieve a common goal, develop new skills in the field of web development and contribute with my coding experience, solution development and communication skills.</p>
+            <p class="hidden">I believe a productive learning experience comes from a professional environment, therefor I am motived to perform my future tasks and start a new chapter in my career.</p>
           </div> 
           <div class="col cv-card">
             <div class="card cv-card cv-card-trigger" style="width: 18rem;">
-              <div class="card-header text-bg-dark cv-card-bg">
+              <div class="card-header cv-card-title">
                 <h3>Give these a look.</h3> <h3 id="cv-card-eyes">👀</h3>
               </div>
               <!--CARD-->
               <ul class="list-group list-group-flush">
                 <!--CV -->
-                <li class="list-group-item cv-card-bg"> <a href="files/RFCV.pdf">My CV</a></li>
+                <a class="cv-card-link cv-card-bg" href="files/RFCV.pdf"><li class="list-group-item cv-card-bg"> My CV</li></a>
                 <!--CERTIFICATES DROPDOWN-->
                 <li class="list-group-item cv-card-bg">Certificates</li>
                 <!--TECH STACK-->
@@ -169,6 +169,6 @@
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
-
+  <script src="app.js"></script>
 </body>
 </html>
