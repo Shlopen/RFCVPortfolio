@@ -33,11 +33,11 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle nav-link-sel" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
-            <ul class="dropdown-menu ">
-              <li><a class="dropdown-item" href="https://shlopen.github.io/RFCVPortfolio/Dicee%20roller/dicee.html">Dicee roller</a></li>
-              <li><a class="dropdown-item" href="https://shlopen.github.io/RFCVPortfolio/Drum%20Kit/index.html">Interactive drum kit</a></li>
-              <li><a class="dropdown-item" href="https://shlopen.github.io/RFCVPortfolio/Simon%20Says/index.html">Simon Says</a></li>
-              <li><a class="dropdown-item" href="https://shlopen.github.io/RFCVPortfolio/TinDog%20Mockup/index.html">TinDog mockup</a></li>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item dropdown-bg" href="https://shlopen.github.io/RFCVPortfolio/Dicee%20roller/dicee.html">Dicee roller</a></li>
+              <li><a class="dropdown-item dropdown-bg" href="https://shlopen.github.io/RFCVPortfolio/Drum%20Kit/index.html">Interactive drum kit</a></li>
+              <li><a class="dropdown-item dropdown-bg" href="https://shlopen.github.io/RFCVPortfolio/Simon%20Says/index.html">Simon Says</a></li>
+              <li><a class="dropdown-item dropdown-bg" href="https://shlopen.github.io/RFCVPortfolio/TinDog%20Mockup/index.html">TinDog mockup</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -128,34 +128,61 @@
   <section >
     <div id="cvsum">
       <div class="container text-center">
-        <div class="row align-items-start">    
-          <div class="col cvsum-text"> 
+        <div class="align-items-start">    
+          <div class="cvsum-text"> 
             <h1 class="hidden">Who am I?</h1>
             
-            <p class="hidden">Over 3 years experience as an engineering technician using Siemens’s technology to develop solutions and respond to clients' necessities.</p>
-            <p class="hidden">I am currently searching for a position where I can collaborate with a team to achieve a common goal, develop new skills in the field of web development and contribute with my coding experience, solution development and communication skills.</p>
-            <p class="hidden">I believe a productive learning experience comes from a professional environment, therefor I am motived to perform my future tasks and start a new chapter in my career.</p>
+            <p class="hidden">Hello, I'm Rui.</p>
+            <p class="hidden">I'm an Engineering technician with 3+ years experience working in the building automation and HVAC Systems field.
+              Well-versed in providing and managing clients, from various industries with scalable solutions to optimize their building efficiency and respond to their day-to-day needs with Siemens’ technologies.
+              Eager to leverage technical skills and passion for web development to deliver high-quality, efficient and scalable web solutions as a Junior Front-End Developer. </p>
+            <p class="hidden">As a passionate web developer, I find great satisfaction in solving complex problems and creating efficient and intuitive solutions that enhance the user experience. I am constantly inspired by the ever-evolving nature of the field, and I believe that web development provides an exciting and challenging platform for me to creatively express myself. Whether I am working on front-end or back-end development, I am always driven by the desire to improve and innovate, and I am eager to bring this energy and enthusiasm to any project or team.</p>
           </div> 
-          <div class="col cv-card">
-            <div class="card cv-card cv-card-trigger" style="width: 18rem;">
+
+
+          <div class="cv-card">
+            <div class="card cv-card cv-card-trigger">
               <div class="card-header cv-card-title">
                 <h3>Give these a look.</h3> <h3 id="cv-card-eyes">👀</h3>
               </div>
               <!--CARD-->
               <ul class="list-group list-group-flush">
                 <!--CV -->
-                <a class="cv-card-link cv-card-bg" href="files/RFCV.pdf"><li class="list-group-item cv-card-bg"> My CV</li></a>
+                <a class="cv-card-link cv-card-bg" href="files/RFCV.pdf" target="_blank"><li class="list-group-item cv-card-bg"> My CV </li></a>
                 <!--CERTIFICATES DROPDOWN-->
-                <li class="list-group-item cv-card-bg cv-dropdown"> Certificates
-                  <!--<div class="cv-dropdown-content">
-                    <a class="cv-card-link cv-card-bg" href="#">LinkedIn</a>
-                    <a class="cv-card-link cv-card-bg" href="#">German</a>
-                    <a class="cv-card-link cv-card-bg" href="#">Siemens’s #DigiPass2021</a>
-                  </div>-->
+                <li id="cv-card-certf" class="list-group-item cv-card-bg"> Certificates
+                  <div id="cv-card-certf-content" class="invis">
+                    <div>
+                      <a class="cv-card-link" target="_blank" href="https://github.com/Shlopen/RFCVPortfolio/tree/main/files/certificates/Management"><i class="fa-solid fa-file-pdf"></i>
+                      <h4>Management</h4></a>
+                    </div>
+                    <div>
+                      <a class="cv-card-link" target="_blank" href="https://github.com/Shlopen/RFCVPortfolio/tree/main/files/certificates/Soft%20%skills"><i class="fa-solid fa-file-pdf"></i>
+                      <h4>Soft skills</h4></a>
+                    </div>
+                    <div>
+                      <a class="cv-card-link" target="_blank" href="https://github.com/Shlopen/RFCVPortfolio/tree/main/files/certificates/Other"><i class="fa-solid fa-file-pdf"></i>
+                      <h4>Other</h4></a>
+                    </div>
+                  </div>
                 </li>
 
                 <!--TECH STACK-->
-                <li class="list-group-item cv-card-bg">Tech Stack</li>
+                <li id= "cv-card-tech" class="list-group-item cv-card-bg ">
+                  Tech Stack
+                  <div id="cv-card-tech-content" class="invis"> 
+                    <span>C++</span>
+                    <i class="fa-brands fa-square-js"></i>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-git-alt"></i>
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-node"></i>
+                    
+
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -172,7 +199,7 @@
           <p>Currently studying: Node.js; EJS; SQL </p>
         </div>
     </section>
-   -->
+  -->
 <!--Contact-->
 
   <section >
@@ -184,7 +211,9 @@
     </div>
   </section>
 
+<!--JQuery, JScript-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

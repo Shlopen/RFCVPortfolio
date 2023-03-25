@@ -70,7 +70,7 @@ div{
     transition-timing-function: ease;
     transition: font-size 0.5s;
 }
-.carousel-caption:hover ~ .img-link{
+.carousel-caption:hover .img-link{
     font-size: 1.75rem;
 }
 .carousel-control-prev{
@@ -87,12 +87,21 @@ div{
 
 .cvsum-text{
     text-align: justify;
+    padding-bottom: 10%;
 }
 
 .cv-card{
     margin: auto;
     border-color: #ff5303;
-
+    height: auto;
+    width: 36rem;
+    transition-timing-function: ease-in-out;
+    transition: width 0.5s, height 0.5s;
+}
+.cv-card.open{
+    width: 50rem;
+    transition-timing-function: ease-in-out;
+    transition: width 0.5;
 }
 
 #cv-card-eyes{
@@ -108,16 +117,13 @@ div{
 }
 
 .cv-card-title{
-    border-color: #ff5303;
     background-color: #262626;
     color: #EAF6F6;
 }
 
-.cv-card-link{
-    text-decoration: none;
-}
-
 .cv-card-bg{
+    height: auto;
+    text-decoration: none;
     border-color: #ff5303;
     background-color: #262626;
     color: #EAF6F6;
@@ -129,6 +135,36 @@ div{
     color: #262626;
     font-weight: 700;
 }
+.cv-card-bg:hover .cv-card-link{
+    color: #262626;
+    transition-timing-function: ease;
+    transition: color 0.5s;
+}
+.cv-card-link{
+    text-decoration: none;
+    color: #EAF6F6;
+    transition-timing-function: ease;
+    transition: color 0.5s;
+}
+
+.cv-card-sec-toggle{
+    height: 20rem;
+    transition: height 0.5s;
+}
+.invis{
+    display: none;
+}
+
+#cv-card-tech-content{
+    font-size: 36px;
+    text-align: center;
+}
+#cv-card-certf-content{
+    font-size: 36px;
+    text-align: center;
+}
+
+/* NAV BAR*/
 
 .navbar{
     background-color: #ff5303;
@@ -148,7 +184,25 @@ div{
     color: #EAF6F6;
 }
 
+.dropdown-menu{
+    border-color: #ff5303;
+    background-color: #262626;
+}
 
+.dropdown-bg{
+    height: auto;
+    border-color: #ff5303;
+    background-color: #262626;
+    color: #EAF6F6;
+    transition-timing-function: ease;
+    transition: background-color 0.5s, color 0.5s, font-weight 0.5s;
+}
+.dropdown-bg:hover{
+    background-color: #ff5303;
+    color: #262626;
+}
+
+/* Contact info */
 
 #contactinfo{
     padding-top: 5%;
