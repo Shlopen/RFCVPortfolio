@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RF Portfolio</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/81a9cbd299.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+<body>
+    
+  <!--Navbar-->
+  <section id="title">
+    <nav class="navbar navbar-expand-lg">
+
+      <a class="navbar-brand" href="">Rui Faria</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-link-sel" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item dropdown-bg" href="https://codesandbox.io/s/friendly-lamport-tej3k6?file=/src/App.js">Tic Tac Toe</a></li>
+              <li><a class="dropdown-item dropdown-bg" href="https://shlopen.github.io/RFCVPortfolio/Simon%20Says/index.html">Simon Says</a></li>
+              <li><a class="dropdown-item dropdown-bg" href="https://shlopen.github.io/RFCVPortfolio/TinDog%20Mockup/index.html">TinDog mockup</a></li>
+              <li><a class="dropdown-item dropdown-bg" href="https://shlopen.github.io/RFCVPortfolio/Drum%20Kit/index.html">Interactive drum kit</a></li>
+              <li><a class="dropdown-item dropdown-bg" href="https://shlopen.github.io/RFCVPortfolio/Dicee%20roller/dicee.html">Dicee roller</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-sel" href="files/RFCV.pdf">CV</a>
+          </li>
+          <!--
+          <li class="nav-item">
+            <a class="nav-link" href="#">What's next</a>
+          </li>
+          -->
+          <li class="nav-item">
+            <a class="nav-link nav-link-sel" href="#contactinfo">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </section>
+
+  <!--WIP
+
+  <section>
+    <div id="wip">
+      <img class="wipimg" src="images/WIP.png" alt="Roadwork-Sign.png">
+      <h1>
+        Website in the works.
+      </h1>
+      <p> In the meantime, check out some stuff I made.</p>
+    </div>
+  </section>
+-->
+  <!--Project Carousel-->
+
+  <section>
+      <div id="projectcarousel">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/tictactoe.png" class="d-block w-25 carouselLogo" alt="tictactoe.png.png">
+              <div class="carousel-caption d-none d-md-block">
+                <h5><a class="img-link" href="https://codesandbox.io/s/friendly-lamport-tej3k6?file=/src/App.js">Tic Tac Toe</a></h5>
+                <p>The classic Tic Tac Toe game.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/simon.png" href="https://shlopen.github.io/RFCVPortfolio/Simon%20Says/index.html" class="d-block w-25 carouselLogo" alt="SimonSays.PNG">
+              <div class="carousel-caption d-none d-md-block">
+                <h5><a class="img-link" href="https://shlopen.github.io/RFCVPortfolio/Simon%20Says/index.html">Simon Says</a></h5>
+                <p>Simons Says in browser game.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/flameemoji.png" class="d-block w-25 carouselLogo" alt="tindog-log.png">
+              <div class="carousel-caption d-none d-md-block">
+                <h5><a class="img-link" href="https://shlopen.github.io/RFCVPortfolio/TinDog%20Mockup/index.html">TinDog</a></h5>
+                <p>A mockup website for a dating app knock-off.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/drumemoji.png" href="https://shlopen.github.io/RFCVPortfolio/Drum%20Kit/index.html" class="d-block w-25 carouselLogo" alt="drum-kit-logo.PNG">
+              <div class="carousel-caption d-none d-md-block">
+                <h5><a class="img-link" href="https://shlopen.github.io/RFCVPortfolio/Drum%20Kit/index.html">Drum kit</a></h5>
+                <p>An online interactive drum kit.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/diceemoji.png" href="https://shlopen.github.io/RFCVPortfolio/Dicee%20roller/dicee.html" class="d-block w-25 carouselLogo" alt="dice-site.PNG">
+              <div class="carousel-caption d-none d-md-block">
+                <h5><a class="img-link" href="https://shlopen.github.io/RFCVPortfolio/Dicee%20roller/dicee.html">Dicee</a></h5>
+                <p>An automatic dice roller for settling debates.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+  </section>
+
+
+  <!--CV Sumary-->
+
+  <section >
+    <div id="cvsum">
+      <div class="container text-center">
+        <div class="align-items-start">    
+          <div class="cvsum-text"> 
+            <h1 class="hidden">Who am I?</h1>
+            
+            <p class="hidden">Hello, I'm Rui.</p>
+            <p class="hidden">I'm an Engineering technician with 3+ years experience working in the building automation and HVAC Systems field that has transitioned to the Software engineering field.
+            Well-versed in providing and managing clients, from various industries with scalable solutions to optimize their building efficiency and respond to their day-to-day needs with Siemens’ technologies.
+            Eager to leverage technical skills and passion for web development to deliver high-quality, efficient and scalable web solutions as a Junior Front-End Developer. </p>
+            <p class="hidden">As a passionate web developer, I find great satisfaction in solving complex problems and creating efficient and intuitive solutions that enhance the user experience. I am constantly inspired by the ever-evolving nature of the field, and I believe that web development provides an exciting and challenging platform for me to creatively express myself. Whether I am working on front-end or back-end development, I am always driven by the desire to improve and innovate, and I am eager to bring this energy and enthusiasm to any project or team.</p>
+          </div> 
+
+
+          <div class="cv-card">
+            <div class="card cv-card cv-card-trigger">
+              <div class="card-header cv-card-title">
+                <h3>Give these a look.</h3> <h3 id="cv-card-eyes">👀</h3>
+              </div>
+              <!--CARD-->
+              <ul class="list-group list-group-flush">
+                <!--CV -->
+                <a class="cv-card-link cv-card-bg" href="files/RFCV.pdf" target="_blank"><li class="list-group-item cv-card-bg"> My CV </li></a>
+                <!--CERTIFICATES DROPDOWN-->
+                <li id="cv-card-certf" class="list-group-item cv-card-bg"> Certificates
+                  <div id="cv-card-certf-content" class="invis">
+                    <div>
+                      <a class="cv-card-link" target="_blank" href="https://github.com/Shlopen/RFCVPortfolio/tree/main/files/certificates/Hard%20%skill"><i class="fa-solid fa-file-pdf"></i>
+                      <h4>Hard skills</h4></a>
+                    </div>
+                    <div>
+                      <a class="cv-card-link" target="_blank" href="https://github.com/Shlopen/RFCVPortfolio/tree/main/files/certificates/Soft%20%skills"><i class="fa-solid fa-file-pdf"></i>
+                      <h4>Soft skills</h4></a>
+                    </div>
+                  </div>
+                </li>
+
+                <!--TECH STACK-->
+                <li id= "cv-card-tech" class="list-group-item cv-card-bg ">
+                  Tech Stack
+                  <div id="cv-card-tech-content" class="invis"> 
+                    <span>C++</span>
+                    <i class="fa-brands fa-square-js"></i>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-git-alt"></i>
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-node"></i>
+                    
+
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--What's next
+
+    <section >
+        <div id="wnext">
+          <h1>What's next?</h1>
+          <p>Currently studying: Node.js; EJS; SQL </p>
+        </div>
+    </section>
+  -->
+<!--Contact-->
+
+  <section >
+    <div id="contactinfo">
+      <h2>Get in touch</h2>
+      <a class="btn contactinfo-button" href="mailto:ruifariaesas@gmail.com"><i class="contact-icon fa-solid fa-envelope"></i></a>
+      <a class="btn contactinfo-button" href="https://www.linkedin.com/in/rui-faria-068886214/"><i class="contact-icon fa-brands fa-linkedin"></i></a>
+      <a class="btn contactinfo-button" href="https://github.com/Shlopen/RFCVPortfolio"><i class="contact-icon fa-brands fa-github"></i></a>
+    </div>
+  </section>
+
+<!--JQuery, JScript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

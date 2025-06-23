@@ -1,224 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>RF Portfolio</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/81a9cbd299.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!-- Custom CSS-->
-    <link rel="stylesheet" href="css/styles.css">
-
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>RFCVPortfolio</title>
+      <link rel="stylesheet" href="styles.css" />
   </head>
-<body>
-    
-  <!--Navbar-->
-  <section id="title">
-    <nav class="navbar navbar-expand-lg">
-
-      <a class="navbar-brand" href="">Rui Faria</a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle nav-link-sel" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item dropdown-bg" href="https://codesandbox.io/s/friendly-lamport-tej3k6?file=/src/App.js">Tic Tac Toe</a></li>
-              <li><a class="dropdown-item dropdown-bg" href="https://shlopen.github.io/RFCVPortfolio/Simon%20Says/index.html">Simon Says</a></li>
-              <li><a class="dropdown-item dropdown-bg" href="https://shlopen.github.io/RFCVPortfolio/TinDog%20Mockup/index.html">TinDog mockup</a></li>
-              <li><a class="dropdown-item dropdown-bg" href="https://shlopen.github.io/RFCVPortfolio/Drum%20Kit/index.html">Interactive drum kit</a></li>
-              <li><a class="dropdown-item dropdown-bg" href="https://shlopen.github.io/RFCVPortfolio/Dicee%20roller/dicee.html">Dicee roller</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-sel" href="files/RFCV.pdf">CV</a>
-          </li>
-          <!--
-          <li class="nav-item">
-            <a class="nav-link" href="#">What's next</a>
-          </li>
-          -->
-          <li class="nav-item">
-            <a class="nav-link nav-link-sel" href="#contactinfo">Contact</a>
-          </li>
-        </ul>
-
-      </div>
-    </nav>
-  </section>
-
-  <!--WIP
-
-  <section>
-    <div id="wip">
-      <img class="wipimg" src="images/WIP.png" alt="Roadwork-Sign.png">
-      <h1>
-        Website in the works.
-      </h1>
-      <p> In the meantime, check out some stuff I made.</p>
-    </div>
-  </section>
--->
-  <!--Project Carousel-->
-
-  <section>
-      <div id="projectcarousel">
-        <div id="carouselExampleCaptions" class="carousel slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/tictactoe.png" class="d-block w-25 carouselLogo" alt="tictactoe.png.png">
-              <div class="carousel-caption d-none d-md-block">
-                <h5><a class="img-link" href="https://codesandbox.io/s/friendly-lamport-tej3k6?file=/src/App.js">Tic Tac Toe</a></h5>
-                <p>The classic Tic Tac Toe game.</p>
-              </div>
+  <body>
+    <div class="wrapper1">
+      <!--NAVBAR-->
+      <header class="navbar">
+              <nav class="nav-links">
+                <a href="#projects">Projects</a>
+                <a href="#services">Services</a>
+                <button popovertarget="contact-popover" aria-label="Open contact popover"><a>Contact</a></button>
+              </nav>
+              <div class="logo">Rui Faria</div>
+      </header>               
+      <!--END NAVBAR-->
+      <!--POPOVER -->
+        <div popover id="contact-popover" class="contact-popover">
+          <div class="popover-content" aria-label="Press Enter or Space to close the popover, or Tab to navigate popover content" >
+            <!-- Left column: text info -->
+            <div class="contact-info">
+              <h2 class="contact-name">Rui Faria</h2>
+              <h3 class="contact-role">UX/UI & Web Developer</h3>
+              <h3 class="contact-email">ruifariaesas@gmail.com</h3>
             </div>
-            <div class="carousel-item">
-              <img src="images/simon.png" href="https://shlopen.github.io/RFCVPortfolio/Simon%20Says/index.html" class="d-block w-25 carouselLogo" alt="SimonSays.PNG">
-              <div class="carousel-caption d-none d-md-block">
-                <h5><a class="img-link" href="https://shlopen.github.io/RFCVPortfolio/Simon%20Says/index.html">Simon Says</a></h5>
-                <p>Simons Says in browser game.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="images/flameemoji.png" class="d-block w-25 carouselLogo" alt="tindog-log.png">
-              <div class="carousel-caption d-none d-md-block">
-                <h5><a class="img-link" href="https://shlopen.github.io/RFCVPortfolio/TinDog%20Mockup/index.html">TinDog</a></h5>
-                <p>A mockup website for a dating app knock-off.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="images/drumemoji.png" href="https://shlopen.github.io/RFCVPortfolio/Drum%20Kit/index.html" class="d-block w-25 carouselLogo" alt="drum-kit-logo.PNG">
-              <div class="carousel-caption d-none d-md-block">
-                <h5><a class="img-link" href="https://shlopen.github.io/RFCVPortfolio/Drum%20Kit/index.html">Drum kit</a></h5>
-                <p>An online interactive drum kit.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="images/diceemoji.png" href="https://shlopen.github.io/RFCVPortfolio/Dicee%20roller/dicee.html" class="d-block w-25 carouselLogo" alt="dice-site.PNG">
-              <div class="carousel-caption d-none d-md-block">
-                <h5><a class="img-link" href="https://shlopen.github.io/RFCVPortfolio/Dicee%20roller/dicee.html">Dicee</a></h5>
-                <p>An automatic dice roller for settling debates.</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-  </section>
-
-
-  <!--CV Sumary-->
-
-  <section >
-    <div id="cvsum">
-      <div class="container text-center">
-        <div class="align-items-start">    
-          <div class="cvsum-text"> 
-            <h1 class="hidden">Who am I?</h1>
-            
-            <p class="hidden">Hello, I'm Rui.</p>
-            <p class="hidden">I'm an Engineering technician with 3+ years experience working in the building automation and HVAC Systems field that has transitioned to the Software engineering field.
-            Well-versed in providing and managing clients, from various industries with scalable solutions to optimize their building efficiency and respond to their day-to-day needs with Siemens’ technologies.
-            Eager to leverage technical skills and passion for web development to deliver high-quality, efficient and scalable web solutions as a Junior Front-End Developer. </p>
-            <p class="hidden">As a passionate web developer, I find great satisfaction in solving complex problems and creating efficient and intuitive solutions that enhance the user experience. I am constantly inspired by the ever-evolving nature of the field, and I believe that web development provides an exciting and challenging platform for me to creatively express myself. Whether I am working on front-end or back-end development, I am always driven by the desire to improve and innovate, and I am eager to bring this energy and enthusiasm to any project or team.</p>
-          </div> 
-
-
-          <div class="cv-card">
-            <div class="card cv-card cv-card-trigger">
-              <div class="card-header cv-card-title">
-                <h3>Give these a look.</h3> <h3 id="cv-card-eyes">👀</h3>
-              </div>
-              <!--CARD-->
-              <ul class="list-group list-group-flush">
-                <!--CV -->
-                <a class="cv-card-link cv-card-bg" href="files/RFCV.pdf" target="_blank"><li class="list-group-item cv-card-bg"> My CV </li></a>
-                <!--CERTIFICATES DROPDOWN-->
-                <li id="cv-card-certf" class="list-group-item cv-card-bg"> Certificates
-                  <div id="cv-card-certf-content" class="invis">
-                    <div>
-                      <a class="cv-card-link" target="_blank" href="https://github.com/Shlopen/RFCVPortfolio/tree/main/files/certificates/Hard%20%skill"><i class="fa-solid fa-file-pdf"></i>
-                      <h4>Hard skills</h4></a>
-                    </div>
-                    <div>
-                      <a class="cv-card-link" target="_blank" href="https://github.com/Shlopen/RFCVPortfolio/tree/main/files/certificates/Soft%20%skills"><i class="fa-solid fa-file-pdf"></i>
-                      <h4>Soft skills</h4></a>
-                    </div>
-                  </div>
-                </li>
-
-                <!--TECH STACK-->
-                <li id= "cv-card-tech" class="list-group-item cv-card-bg ">
-                  Tech Stack
-                  <div id="cv-card-tech-content" class="invis"> 
-                    <span>C++</span>
-                    <i class="fa-brands fa-square-js"></i>
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <i class="fa-brands fa-git-alt"></i>
-                    <i class="fa-brands fa-bootstrap"></i>
-                    <i class="fa-brands fa-react"></i>
-                    <i class="fa-brands fa-node"></i>
-                    
-
-                  </div>
-                </li>
-              </ul>
+            <!-- Right column: vertical icons -->
+            <div class="contact-icons">
+              <a href="https://shlopen.github.io/RFCVPortfolio/files/RFCV.pdf" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" width="16" fill="#F5F5F5">
+                  <path d="M240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h360l200 200v520q0 33-23.5 56.5T720-80H240Zm0-80h480v-480H560v-160H240v640Zm240-40q67 0 113.5-47T640-360v-160h-80v160q0 33-23 56.5T480-280q-33 0-56.5-23.5T400-360v-220q0-9 6-14.5t14-5.5q9 0 14.5 5.5T440-580v220h80v-220q0-42-29-71t-71-29q-42 0-71 29t-29 71v220q0 66 47 113t113 47ZM240-800v160-160 640-640Z"/>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/rui-faria-068886214/" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                </svg>
+              </a>  
+              <a href="https://github.com/Shlopen/RFCVPortfolio" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
+ 
+      <!--END POPOVER-->
+      <!--Hero section--> 
+      <main>
+        <section class="hero">
+          <div class="hero-text">
+            <h1>Custom designs engineered for your Business</h1>
+            <p>
+              I apply user-centered design and web development to build custom web solutions that fit your vision.
+            </p>
+            <div class="buttons">
+              <button class="btn btn-primary" popovertarget="contact-popover">Contact</button>
+              <a href="#projects"><button class="btn btn-secondary"> Projects</button></a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="divider-wrapper2">
+        <div class="divider-top"></div>
+      </div>
+    </div>   
+      <!--END HERO SECTION--->
+    <div class="wrapper1"> 
+      <!-- WORK SHOWCASE-->    
+      <section id="projects" class="work">
+        <h1>My Work</h1>
+        <div class="work-content">
+          <div class="work-text">
+            <h2>Portfolio revamp</h2>
+            <p>
+              This site itself is my latest case study, an upgrade from my very first portfolio. 
+              My original site was where I learned the ropes of HTML, CSS, and JavaScript, but it lacked clear structure and a soothing design. 
+              With this revamp, I set out to apply a solid layout, organize content intuitively, and wrap it all in a calming, cohesive look. 
+              It’s proof that thoughtful structure and clean visuals can turn a rough prototype into a welcoming, user-friendly experience.
+            </p>
+          </div>
+          <a class="work-image" href="https://shlopen.github.io/RFCVPortfolio/" target="_blank" rel="noopener noreferrer" data-tooltip="Visit Website">  
+            <svg xmlns="http://www.w3.org/2000/svg" width="98" height="96">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" fill="#24292f"/>
+            </svg>
+          </a>
+        </div>
+        <div class="work-content">
+          <a class="work-image" href="https://criticalsoftware.com/en/expertise/uxd" target="_blank" rel="noopener noreferrer" data-tooltip="Learn more">
+              <svg class="company-logo csw" width="480" height="480" viewBox="0 0 800 800">
+                <path xmlns="http://www.w3.org/2000/svg" class="st0" d="M0,0v800h800V0.7c-176,79.2-316.3,219.6-396.2,392C457.6,273.5,482.6,139.3,471,0H0z"/>
+              </svg>    
+          </a>
+          <div class="work-text">
+            <h2>Critical Software</h2>
+            <h3>Role: UX Engineer</h3>
+            <p>
+              Currently, I'm doing UX work for Critical software. 
+              I'm using user‑centered design and design‑thinking methods, keeping our design system documentation up to date so visuals stayed consistent and everyone from developers to clients were aligned.
+              By running regular design reviews and hands‑on user tests, I gathered feedback and iterated on prototypes to boost usability and polish each interaction.
+            </p>
+          </div>
+        </div>
+        <div class="work-content">
+          <div class="work-text">
+            <h2>Siemens</h2>
+            <h3>Role: Engineering technician</h3>
+            <p>
+              Although the role was primarily focused on engineering and HVAC systems, one of the key tasks that sparked my interest in design was creating and implementing personalized user interfaces for Siemens’ building management system using Desigo CC. 
+              I applied user research to understand client needs and prioritized features through clear information hierarchy to build a strong, user-centric foundation. 
+              This work was carried out for over 50 clients across Portugal in industries such as industrial, healthcare, logistics, and hospitality. 
+            </p>
+          </div>
+            <a class="work-image" href="https://www.siemens.com/global/en/products/buildings/desigo-building-automation/building-management/desigo-cc.html" target="_blank" rel="noopener noreferrer" data-tooltip="Learn more">
+              <svg class="company-logo" xmlns="http://www.w3.org/2000/svg" height="398" width="500" viewBox="0 0 1000 159.106">
+                <g clip-rule="evenodd" fill="#099" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><path d="M988.307 5.583v29.781c-15.429-5.824-29.166-8.77-41.188-8.77-7.122 0-12.792 1.32-17.056 3.87-4.264 2.57-6.44 5.736-6.44 9.472 0 4.967 4.813 9.385 14.506 13.342l28.001 13.626C988.77 77.696 1000 92.026 1000 110.027c0 14.968-5.956 26.902-17.979 35.738-11.935 8.924-28.001 13.341-48.002 13.341-9.231 0-17.517-.395-24.88-1.23-7.363-.792-15.825-2.419-25.21-4.748v-31.166c17.21 5.824 32.88 8.77 46.99 8.77 16.837 0 25.21-4.88 25.21-14.727 0-4.9-3.428-8.857-10.395-11.956l-31.1-13.254c-11.473-5.187-20.001-11.473-25.584-18.923-5.495-7.517-8.286-16.133-8.286-25.98 0-13.78 5.802-24.88 17.275-33.32C909.6 4.198 924.942 0 944.02 0c6.198 0 13.342.55 21.254 1.56 7.978 1.078 15.649 2.396 23.034 4.023zM107.477 5.583v29.781c-15.43-5.824-29.144-8.77-41.167-8.77-7.143 0-12.791 1.32-17.055 3.87-4.264 2.57-6.44 5.736-6.44 9.472 0 4.967 4.88 9.385 14.572 13.342l28.001 13.626c22.55 10.792 33.804 25.122 33.804 43.123 0 14.968-5.978 26.902-17.913 35.738-12.022 8.924-28.001 13.341-48.068 13.341-9.231 0-17.54-.395-24.902-1.23-7.363-.792-15.737-2.419-25.188-4.748v-31.166c17.276 5.824 32.947 8.77 46.97 8.77 16.835 0 25.21-4.88 25.21-14.727 0-4.9-3.408-8.857-10.31-11.956l-31.1-13.254c-11.56-5.187-20.088-11.473-25.583-18.923C2.725 64.355 0 55.739 0 45.892c0-13.78 5.759-24.88 17.297-33.32C28.771 4.198 44.134 0 63.212 0c6.264 0 13.319.55 21.32 1.56 7.912 1.078 15.582 2.396 22.945 4.023zM185.173 2.791v153.524h-45.607V2.79zM333.487 156.315H220.45V2.79h111.653v28.376H264.34v34.045h58.772v25.583h-58.772v35.739h69.146zM358.697 156.315V2.79h55.673l38.001 93.983 39.76-93.983h52.882v153.524h-42.576V55.058L458.262 157.72h-26.287L389.49 55.058v101.257zM693.263 156.315H580.226V2.79h111.652v28.376h-67.391v34.045h58.772v25.583h-58.772v35.739h68.776zM851.905 156.315h-48.374l-54.286-98.466v98.466h-30.773V2.79h49.784l52.881 96.774V2.791h30.768z"/></g>
+              </svg>
+            </a>
+        </div>
+      </section>
+      <!-- END WORK SHOWCASE-->
+      <div class="divider-wrapper2">
+        <div class="divider-middle"></div>
       </div>
     </div>
-  </section>
-
-  <!--What's next
-
-    <section >
-        <div id="wnext">
-          <h1>What's next?</h1>
-          <p>Currently studying: Node.js; EJS; SQL </p>
+    <div class="wrapper1"> 
+      <!--SERVCIES SECTION-->
+      <section id="services" class="services">
+        <h1>My Services</h1>
+        <div class="services-grid">
+          <!-- Repeatable card 1-->
+          <div class="service-card">
+            <div class="card-header">
+              <img class="card-icon" aria-hidden="true" src="img/design-services.svg" alt="Web design icon, a pencil and a ruler crossed">
+                <svg class="card-decor" viewBox="0 0 100 20" preserveAspectRatio="none">
+                  <path d="M0,10 C25,0 75,20 100,10" fill="none" stroke="#FF7A00" stroke-width="1"/>
+                </svg>
+            </div>
+            <div class="card-body">
+              <h2>Web Design</h2>
+              <p>
+                I craft custom website designs that capture your brand and engage visitors.
+                Each layout is clean, responsive, and user-friendly, so your site always looks great on any device.
+              </p>
+            </div>
+          </div>
+          <!-- Repeatable card 2-->
+          <div class="service-card">
+            <div class="card-header">
+              <img class="card-icon" aria-hidden="true" src="img/uxui-services.svg" alt="UX/UI design icon, a painter's pallet">
+                <svg class="card-decor" viewBox="0 0 100 20" preserveAspectRatio="none">
+                  <path d="M0,10 C25,0 75,20 100,10" fill="none" stroke="#FF7A00" stroke-width="1"/>
+                </svg>
+            </div>
+            <div class="card-body">
+              <h2>UX/UI Design</h2>
+              <p> I create intuitive user experiences and interfaces. 
+                By putting myself in your users’ shoes and understanding their needs, I ensure every digital interaction is simple and satisfying.</p>
+            </div>
+          </div>
+          <!-- Repeatable card 3-->
+          <div class="service-card">
+            <div class="card-header">
+              <img class="card-icon" aria-hidden="true" src="img/webdev-services.svg" alt="Web development code icon">
+                <svg class="card-decor" viewBox="0 0 100 20" preserveAspectRatio="none">
+                  <path d="M0,10 C25,0 75,20 100,10" fill="none" stroke="#FF7A00" stroke-width="1"/>
+                </svg>
+            </div>
+            <div class="card-body">
+              <h2>Web Development</h2>
+              <p>
+                I turn designs into reality with reliable, clean code. 
+                From front-end interactivity to behind-the-scenes functionality, I build sites and apps that load fast, run smoothly, and are easy to maintain.
+              </p>
+            </div>
+          </div>
+          <!-- Repeatable card 4-->
+          <div class="service-card">
+            <div class="card-header">
+              <img class="card-icon" src="img/game-services.svg" alt="Game controller icon">
+                <svg class="card-decor" aria-hidden="true" viewBox="0 0 100 20" preserveAspectRatio="none">
+                  <path d="M0,10 C25,0 75,20 100,10" fill="none" stroke="#FF7A00" stroke-width="1"/>
+                </svg>
+            </div>
+            <div class="card-body">
+              <h2>Game Design</h2>
+              <p>
+                I design fun game concepts or gamified features for your projects. 
+                By focusing on engaging mechanics and storytelling, I create experiences that keep players coming back for more.
+              </p>
+            </div>
+          </div>
         </div>
-    </section>
-  -->
-<!--Contact-->
-
-  <section >
-    <div id="contactinfo">
-      <h2>Get in touch</h2>
-      <a class="btn contactinfo-button" href="mailto:ruifariaesas@gmail.com"><i class="contact-icon fa-solid fa-envelope"></i></a>
-      <a class="btn contactinfo-button" href="https://www.linkedin.com/in/rui-faria-068886214/"><i class="contact-icon fa-brands fa-linkedin"></i></a>
-      <a class="btn contactinfo-button" href="https://github.com/Shlopen/RFCVPortfolio"><i class="contact-icon fa-brands fa-github"></i></a>
-    </div>
-  </section>
-
-<!--JQuery, JScript-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <script src="app.js"></script>
-</body>
+      </section>
+      <!--END SERVICE SECTION-->
+      <div class="divider-wrapper2">
+        <div class="divider-bottom"></div>
+      </div> 
+      <!--FOOTER--> 
+    </div>       
+    <footer class="footer">
+      <div class="footer-cta">
+        <p>Have a vision?</p>
+        <p class="highlight">Let’s make it happen!</p>
+        <button class="btn btn-secondary" popovertarget="contact-popover">Contact</button>
+      </div>
+      <div class="footer-links">
+        <h3>Contacts</h3>
+        <a href="#">E-mail</a>
+        <a href="https://shlopen.github.io/RFCVPortfolio/files/RFCV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+        <a href="https://www.linkedin.com/in/rui-faria-068886214/" target="_blank" rel="noopener noreferrer">LinkedIn</a>        
+        <a href="https://github.com/Shlopen/RFCVPortfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <small>Last update: Jun 20, 2025</small>
+      </div>
+    </footer> 
+    <!--END FOOTER-->       
+  </body>
 </html>
