@@ -247,6 +247,7 @@ p{
 
 .popover-content {
   display: flex;
+  position: relative;
   gap: 4rem;
 }
 
@@ -263,16 +264,14 @@ p{
 
 .contact-email{
   margin-top: auto;
-  user-select: all;
+  /*user-select: all;*/
 }
 
 .contact-email-btn {
-  background: none;
-  border: none;
-  color: var(--wth-text);
-  text-decoration: underline;
+  margin-top: auto;
   cursor: pointer;
-  border-radius: 0.25rem;
+  width: fit-content;
+  text-decoration: none;
 }
 
 .contact-icons {
@@ -289,6 +288,29 @@ p{
 }
 .icon:hover {
   fill: var(--accent);
+}
+
+#snackbar {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 10;
+}
+
+/* Show it */
+#snackbar.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .btn-close {
@@ -454,9 +476,16 @@ p{
   font-weight: var(--fw-bold);
 }
 
-.footer-links a {
+.footer-links button{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-links a{
   display: block;
   padding: 0.75rem 0;
+  font-size: 1rem;
   color: var(--wht-text);
   text-decoration: none;
   font-weight: var(--fw-light);
