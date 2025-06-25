@@ -33,10 +33,12 @@
   --fw-medium: 500;
   --fw-semibold: 600;
   --fw-bold: 700;
-  --fs-h1: 4rem;
-  --fs-h2: 2.25rem;
-  --fs-h3: 1.5rem;
-  --fs-p: 1.5rem;
+  --fs-h1: clamp(2rem, 4vw + 1rem, 4rem);
+  --fs-h2: clamp(1.5rem, 3vw + 0.75rem, 2.25rem);
+  --fs-h3: clamp(1.25rem, 2.5vw + 0.5rem, 1.5rem);
+  --fs-p: clamp(1rem, 2vw + 0.5rem, 1.5rem);
+  --fs-a: clamp(0.875rem, 1.5vw + 0.25rem, 1rem);
+  --fs-small: clamp(0.75rem, 1vw + 0.2rem, 0.875rem);
 }
 
 /* GLOBAL STYLES */
@@ -115,7 +117,7 @@ p{
   color: var(--wht-text); 
   font-family: var(--ff);
   font-weight: var(--fw-bold);
-  font-size: 1.5rem; 
+  font-size: var(--fs-p); 
 }
 
 .navbar button{
@@ -130,7 +132,7 @@ p{
   color: var(--wht-text);
   font-family: var(--ff);
   font-weight: var(--fw-light);
-  font-size: 1.5rem;
+  font-size: var(--fs-p);
   cursor: pointer;
   transition: color 0.3s ease;
 }
@@ -262,11 +264,6 @@ p{
   color: var(--primary);
 }
 
-.contact-email{
-  margin-top: auto;
-  /*user-select: all;*/
-}
-
 .contact-email-btn {
   margin-top: auto;
   cursor: pointer;
@@ -307,30 +304,9 @@ p{
   z-index: 10;
 }
 
-/* Show it */
 #snackbar.show {
   opacity: 1;
   visibility: visible;
-}
-
-.btn-close {
-  position: absolute;
-  padding: 0.5rem;
-  top: 1rem;
-  right: 1rem;
-  font-size: 1.25rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.close-icon {
-  fill: var(--secondary);
-  transition: fill 0.3s ease;
-}
-
-.close-icon:hover {
-  fill: var(--primary);
 }
 
 /* WORK SECTION */  
@@ -485,7 +461,7 @@ p{
 .footer-links a{
   display: block;
   padding: 0.75rem 0;
-  font-size: 1rem;
+  font-size: var(--fs-a);
   color: var(--wht-text);
   text-decoration: none;
   font-weight: var(--fw-light);
@@ -498,7 +474,7 @@ p{
 .footer-links small {
   display: block;
   margin-top: 1rem;
-  font-size: 0.8rem;
+  font-size: var(--fs-small);
   font-weight: var(--fw-thin);
   color: var(--wht-text);
   opacity: 0.25;
