@@ -1,0 +1,233 @@
+body{
+    background-color: #262626;
+    color: #EAF6F6;
+    text-align: center;
+}
+
+h1, h5{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+p{
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+div{
+    text-align: center;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+#wip{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #262626;
+    color: #EAF6F6;
+}
+
+.carousel-item{
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.wipimg{
+    margin: auto;
+    position: relative;
+    padding: 4% 2% 1% 2%;
+    height: auto;
+    width: 25%;
+}
+
+#projectcarousel{
+    padding-top: 5%;
+    padding-bottom: 10%;
+    background-color: #262626;
+}
+
+.carousel-item{
+    text-align: center;
+}
+
+.carouselLogo{
+    display: block;
+    margin: auto;
+}
+
+.img-link{
+    text-decoration: none;
+    color: #EAF6F6;
+    font-size: 1.25rem;
+    transition-timing-function: ease;
+    transition: font-size 0.5s;
+}
+.carousel-caption:hover .img-link{
+    font-size: 1.75rem;
+}
+.carousel-control-prev{
+    left: 25%;
+}
+.carousel-control-next{
+    right: 25%;
+}
+
+#cv-sum{
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.cvsum-text{
+    text-align: justify;
+    padding-bottom: 10%;
+}
+
+.cv-card{
+    margin: auto;
+    border-color: #ff5303;
+    height: auto;
+    width: 36rem;
+    transition-timing-function: ease-in-out;
+    transition: width 0.5s, height 0.5s;
+}
+.cv-card.open{
+    width: 50rem;
+    transition-timing-function: ease-in-out;
+    transition: width 0.5;
+}
+
+#cv-card-eyes{
+    transition-timing-function: ease-in-out;
+    transition: 0.25s;
+    transform: rotate(0);
+}
+
+.cv-card-trigger:hover #cv-card-eyes{
+    transition-timing-function: ease-in-out;
+    transition: 0.25s;
+    transform: rotate(-0.1turn);
+}
+
+.cv-card-title{
+    background-color: #262626;
+    color: #EAF6F6;
+}
+
+.cv-card-bg{
+    height: auto;
+    text-decoration: none;
+    border-color: #ff5303;
+    background-color: #262626;
+    color: #EAF6F6;
+    transition-timing-function: ease;
+    transition: background-color 0.5s, color 0.5s, font-weight 0.5s;
+}
+.cv-card-bg:hover{
+    background-color: #ff5303;
+    color: #262626;
+    font-weight: 700;
+}
+.cv-card-bg:hover .cv-card-link{
+    color: #262626;
+    transition-timing-function: ease;
+    transition: color 0.5s;
+}
+.cv-card-link{
+    text-decoration: none;
+    color: #EAF6F6;
+    transition-timing-function: ease;
+    transition: color 0.5s;
+}
+
+.cv-card-sec-toggle{
+    height: 20rem;
+    transition: height 0.5s;
+}
+.invis{
+    display: none;
+}
+
+#cv-card-tech-content{
+    font-size: 36px;
+    text-align: center;
+}
+#cv-card-certf-content{
+    font-size: 36px;
+    text-align: center;
+}
+
+/* NAV BAR*/
+
+.navbar{
+    background-color: #ff5303;
+    color: #262626;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+} 
+
+.navbar-brand{
+    margin-left: 2.5rem;
+    font-weight: bold;
+    color: #EAF6F6;
+}
+
+.navbar-link{
+    color: #EAF6F6;
+}
+
+.dropdown-menu{
+    border-color: #ff5303;
+    background-color: #262626;
+}
+
+.dropdown-bg{
+    height: auto;
+    border-color: #ff5303;
+    background-color: #262626;
+    color: #EAF6F6;
+    transition-timing-function: ease;
+    transition: background-color 0.5s, color 0.5s, font-weight 0.5s;
+}
+.dropdown-bg:hover{
+    background-color: #ff5303;
+    color: #262626;
+}
+
+/* Contact info */
+
+#contactinfo{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.contactinfo-button{
+    background-color: #262626;;
+    color: #ff5303;
+    border: none;
+    margin-left: 1%;
+    margin-right: 1%;
+    transition-timing-function: ease;
+    transition: background-color 0.5s, color 0.5s,
+}
+.contactinfo-button:hover{
+    background-color: #ff5303;
+    color: #262626;
+}
+
+.contact-icon{
+    font-size: 3rem;
+}
