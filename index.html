@@ -8,19 +8,18 @@
       <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="wrapper1">
-      <!--NAVBAR-->
-      <header class="navbar">
-              <nav class="nav-links">
-                <a href="#projects">Projects</a>
-                <a href="#services">Services</a>
-                <button popovertarget="contact-popover" aria-label="Open contact popover"><a>Contact</a></button>
-              </nav>
-              <div class="logo">Rui Faria</div>
-      </header>               
-      <!--END NAVBAR-->
-      <!--POPOVER -->
-        <div popover id="contact-popover" class="contact-popover">
+    <!--NAVBAR-->
+    <header class="navbar">
+            <nav class="nav-links" aria-label="Nav-bar">
+              <a href="#projects">Projects</a>
+              <a href="#services">Services</a>
+              <button popovertarget="contact-popover" aria-label="Open contact popover"><a>Contact</a></button>
+            </nav>
+            <div class="logo">Rui Faria</div>
+    </header>               
+    <!--END NAVBAR-->
+    <!--POPOVER -->
+      <div popover id="contact-popover" class="contact-popover">
           <div class="popover-content" aria-label="Press Enter or Space to close the popover, or Tab to navigate popover content" >
             <!-- Left column: text info -->
             <div class="contact-info">
@@ -67,203 +66,384 @@
               </a>
             </div>
           </div>
-        </div>
- 
-      <!--END POPOVER-->
-      <!--Hero section--> 
-      <main>
-        <section class="hero">
-          <div class="hero-text">
-            <h1>Custom designs engineered for your Business</h1>
-            <p>
-              I apply user-centered design and web development to build custom web solutions that fit your vision.
-            </p>
+      </div>
+    <!--END POPOVER-->
+    <!--Hero section--> 
+    <main>
+      <section class="hero">
+          <div class="hero-cnn">
+            <div class="hero-text">
+              <h1>Design that thinks before It looks</h1>
+              <p>
+                Stop designing without purpose.</br>
+                No more design that confuses visitors.</br>
+                Designed around user intent so people know exactly where to click next.
+              </p>
+            </div>
+
             <div class="buttons">
               <button class="btn btn-primary" popovertarget="contact-popover">Contact</button>
-              <a href="#projects"><button class="btn btn-secondary"> Projects</button></a>
+              <a class="btn btn-secondary" href="#projects">Projects</a>
+            </div>
+
+            <div class="FUDs">
+              <div class="FUD">
+                <img src="img/check-badge.svg" alt="">
+                <small>Fixed-price estimate</small>
+              </div>
+              <div class="FUD">
+                <img src="img/check-badge.svg" alt="">
+                <small>Clear milestones & timelines</small>
+              </div>
+              <div class="FUD">
+                <img src="img/check-badge.svg" alt="">
+                <small>Collaborative process</small>
+              </div>
             </div>
           </div>
-        </section>
-      </main>
-      <div class="divider-wrapper2">
+
+          <!-- perspective grid floor -->
+          <div class="hero-bg-grid"></div>
+      </section>
+    </main>
+    <div class="divider-wrapper2">
         <div class="divider-top"></div>
-      </div>
-    </div>   
-      <!--END HERO SECTION--->
-    <div class="wrapper1"> 
+    </div>
+    <!--END HERO SECTION--->
+    <div class="wrapper-bg">
+      <section class="pain-point">
+            <div class="pain-point-text">
+              <h1>Your website should be more than an URL</br> don’t lose clients to bad UX.</h1>
+              <p>
+                What if your first impression isn’t memorable?</br>
+                What if friction kills interest?</br>
+                What if the right people never see your real value?</br> 
+                We take the time to understand your vision and turn it into a focused, intentional experience.</br>
+                Through a collaborative process and defined checkpoints, you stay in control from concept to launch.
+              </p>
+            </div>
+            <div class="pain-point-button">
+              <button class="btn btn-primary" popovertarget="contact-popover">Contact</button>
+            </div>
+      </section>
+      <!--START Value prop SECTION--->
+      <section class="value-prop-cnn">
+        <div class="value-prop">
+          <img class="vp-blob" src="img/value-prop-blob1.svg" alt="">
+          <div class="value-prop-text">
+            <h1>
+              A site that reflects you
+            </h1>
+            <p>
+              Your website should feel like your brand.</br>
+              We translate your vision into a cohesive, intentional experience.
+            </p>
+          </div>
+          <button class="btn btn-primary" popovertarget="contact-popover">Contact</button>
+        </div>
+
+        <div class="value-prop-right-wrapper">
+          <div class="value-prop right">
+            <img class="vp-blob" src="img/value-prop-blob2.svg" alt="">
+            <div class="value-prop-text">
+              <h1>Design with direction</h1>
+              <p>Every section has a purpose, not just a place.</br>
+                We structure your site around user intent, not assumptions.</p>
+            </div>
+            <button class="btn btn-primary">Contact</button>
+          </div>
+        </div>
+
+        <div class="value-prop">
+          <img class="vp-blob" src="img/value-prop-blob3.svg" alt="">
+          <div class="value-prop-text">
+            <h1>
+              Clarity that converts
+            </h1>
+            <p>
+              We turn your ideas into clear, focused messaging.</br>
+              So visitors instantly understand your value and what to do next.
+            </p>
+          </div>
+          <button class="btn btn-primary" popovertarget="contact-popover">Contact</button>
+        </div>
+      </section>
+      <!--END Value prop SECTION--->
+    
+      <!--Step-by-step section-->
+      <section class="step-by-step">
+        <h1 class="large-title">
+          With you every step of the process.</br>
+          From your idea to your launch.
+        </h1>
+          <div class="steps-cnn">
+            <!-- Repeatable card 1-->
+            <div class="service-card">
+              <div class="card-header">
+                <h1 class="number card-icon">1</h1>
+                  <svg class="card-decor" viewBox="0 0 100 20" preserveAspectRatio="none">
+                    <path d="M0,10 C25,0 75,20 100,10" fill="none" stroke="#FFA84D" stroke-width="1"/>
+                  </svg>
+              </div>
+              <div class="card-body">
+                <h2>Understanding your Goals</h2>
+                <p>
+                  We start by getting clear on your business, audience, and objectives.</br>
+                  No assumptions just a focused understanding of what your website needs to achieve.
+                </p>
+              </div>
+            </div>
+            <!-- Repeatable card 2-->
+            <div class="service-card">
+              <div class="card-header">
+                <h1 class="number card-icon">2</h1>
+                  <svg class="card-decor" viewBox="0 0 100 20" preserveAspectRatio="none">
+                    <path d="M0,10 C25,0 75,20 100,10" fill="none" stroke="#FFA84D" stroke-width="1"/>
+                  </svg>
+              </div>
+              <div class="card-body">
+                <h2>Build & Refine</h2>
+                <p>
+                  We bring the design to life with clean, responsive development.</br>
+                  Then refine key interactions and details to remove friction and improve usability.
+                </p>
+              </div>
+            </div>
+            <!-- Repeatable card 3-->
+            <div class="service-card">
+              <div class="card-header">
+                <h1 class="number card-icon">3</h1>
+                  <svg class="card-decor" viewBox="0 0 100 20" preserveAspectRatio="none">
+                    <path d="M0,10 C25,0 75,20 100,10" fill="none" stroke="#FFA84D" stroke-width="1"/>
+                  </svg>
+              </div>
+              <div class="card-body">
+                <h2>Launch & Support</h2>
+                <p>
+                  We launch your website smoothly and make sure everything performs as expected.</br>
+                  Post-launch, we stay available to support, adjust, and improve where needed.
+                </p>
+              </div>
+            </div>
+          </div>
+        <div class="pain-point-button">
+          <button class="btn btn-primary" popovertarget="contact-popover">Contact</button>
+        </div>
+      </section>
       <!-- WORK SHOWCASE-->    
       <section id="projects" class="work">
-        <h1>My Work</h1>
-        <div class="work-content">
-          <div>
-            <div class="work-text">
-              <h2>Koi Spaces CRO-Focused website</h2>
-              <p>
-                This is a concept project for a hypothetical german civil engineering company. built around the idea that interiors should feel intentional, calm, and 
-                perfectly aligned with the way people live. The brand identity draws inspiration from the harmony of koi ponds and the softness of Japanese cherry 
-                blossoms, combining warm neutrals. he concept emphasizes spatial clarity, proportion, and craftsmanship, reflecting the studio’s approach of designing 
-                and building custom furniture and interiors as one cohesive system. Every element, from layout to material palette, is designed to remove visual noise 
-                and create environments that feel complete, timeless, and deeply personal.
-              </p>
-            </div>
-            <div class="buttons">
-              <a href="https://www.figma.com/design/dmCKaSQrzQfBaNOKEqR0WQ/Koi-Spaces?node-id=1-5" target="_blank" rel="noopener noreferrer">
-                <button class="btn btn-primary">Figma file</button>
-              </a>
-                <!--<a href="#MISSING LINK"><button class="btn btn-secondary">Preview website</button></a>-->
-            </div>
-          </div>  
-          <a class="work-image" href="https://www.figma.com/design/dmCKaSQrzQfBaNOKEqR0WQ/Koi-Spaces?node-id=1-5" target="_blank" rel="noopener noreferrer" data-tooltip="View full design">  
-            <img class="work-image" src="img/koispaces-thumbnail.jpg">
-          </a>
-        </div>
-        <div class="work-content"> 
-          <a class="work-image" href="https://www.figma.com/design/CULrOU3YTaOW5QtqDgeb3H/Sun-Ninja-redesign?node-id=9-2" target="_blank" rel="noopener noreferrer" data-tooltip="View full design">  
-            <img class="work-image" src="img/sun_ninja_thumbnail.jpg">
-          </a>
-          <div>
-            <div class="work-text">
-              <h2>Sun Ninja CRO-Focused Re-design</h2>
-              <p>
-                Redesign of Sun Ninja’s product page and homepage to lift brand perception and visual quality while supporting conversion. 
-                The brief called for a premium, exciting, polished design. Using the brand's imagery and brand assets I used a layout with 
-                tight visual hierarchy, intentional spacing and reusable visual devices. Conversion considerations (clear CTAs, benefit-led 
-                messaging, social proof and trust elements) served as a supportive layer to guide user flow and drive purchases.
-              </p>
-            </div>
-            <div class="buttons">
-              <a href="https://www.figma.com/design/CULrOU3YTaOW5QtqDgeb3H/Sun-Ninja-redesign?node-id=9-2" target="_blank" rel="noopener noreferrer">
-                <button class="btn btn-primary">Figma file</button>
-              </a>
-                <!--<a href="#MISSING LINK"><button class="btn btn-secondary">Preview website</button></a>-->
-            </div>
-          </div>
-        </div>
-        <div class="work-content">
-          <div>
-            <div class="work-text">
-              <h2>Bauen company website</h2>
-              <p>
-                This is a concept project for a hypothetical german civil engineering company. A brand built around clarity, efficiency, and execution-first professionalism.
-                Designed for a multi-region presence across six key European locations, the brand emphasizes certified civil engineering capability and a solution-oriented 
-                value proposition that builds trust at every client touchpoint. The website and visual identity work together to reinforce Bauen’s strengths: disciplined 
-                project delivery, confident communication, and a unified brand experience that positions the company as a dependable leader in a competitive industry.
-              </p>
-            </div>
-            <div class="buttons">
-              <a href="https://www.figma.com/design/V4VcAgMAP2GArM6fA7L88r/Bauen-Website?node-id=1-3" target="_blank" rel="noopener noreferrer">
-                <button class="btn btn-primary">Figma file</button>
-              </a>
-                <!--<a href="#MISSING LINK"><button class="btn btn-secondary">Preview website</button></a>-->
-            </div>
-          </div>  
-          <a class="work-image" href="https://www.figma.com/design/V4VcAgMAP2GArM6fA7L88r/Bauen-Website?node-id=1-3" target="_blank" rel="noopener noreferrer" data-tooltip="View full design">  
-            <img class="work-image" src="img/bauen-thumbnail.jpg">
-          </a>
-        </div>
-        <h1 class="work-content">My professional past</h1>
-        <div class="work-content">
-          <a class="work-image" href="https://criticalsoftware.com/en/expertise/uxd" target="_blank" rel="noopener noreferrer" data-tooltip="Learn more">
-              <svg class="company-logo csw" width="480" height="480" viewBox="0 0 800 800">
-                <path xmlns="http://www.w3.org/2000/svg" class="st0" d="M0,0v800h800V0.7c-176,79.2-316.3,219.6-396.2,392C457.6,273.5,482.6,139.3,471,0H0z"/>
-              </svg>    
-          </a>
-          <div class="work-text">
-            <h2>Critical Software</h2>
-            <h3>Role: UX Engineer</h3>
-            <p>
-              Led user-centered HMI concept and wireframe design, establishing standardized UI patterns and a robust design system to improve consistency, 
-              usability, and developer handoff efficiency. Drove iterative testing and cross-functional collaboration to align user needs with engineering 
-              constraints, resulting in measurable workflow improvements.
-            </p>
-          </div>
-        </div>
-        <div class="work-content">
-          <div class="work-text">
-            <h2>Siemens</h2>
-            <h3>Role: Engineering technician</h3>
-            <p>
-              Designed and implemented user-centered interfaces for Siemens’ Desigo CC platform, establishing a reusable design system to improve consistency, 
-              scalability, and delivery speed. Led user research and stakeholder collaboration to refine requirements, optimize operator workflows, and support 
-              successful adoption across diverse client environments.
-            </p>
-          </div>
-            <a class="work-image" href="https://www.siemens.com/global/en/products/buildings/desigo-building-automation/building-management/desigo-cc.html" target="_blank" rel="noopener noreferrer" data-tooltip="Learn more">
-              <svg class="company-logo" xmlns="http://www.w3.org/2000/svg" width="480" height="480" viewBox="0 0 1000 159.106">
-                <g clip-rule="evenodd" fill="#099" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><path d="M988.307 5.583v29.781c-15.429-5.824-29.166-8.77-41.188-8.77-7.122 0-12.792 1.32-17.056 3.87-4.264 2.57-6.44 5.736-6.44 9.472 0 4.967 4.813 9.385 14.506 13.342l28.001 13.626C988.77 77.696 1000 92.026 1000 110.027c0 14.968-5.956 26.902-17.979 35.738-11.935 8.924-28.001 13.341-48.002 13.341-9.231 0-17.517-.395-24.88-1.23-7.363-.792-15.825-2.419-25.21-4.748v-31.166c17.21 5.824 32.88 8.77 46.99 8.77 16.837 0 25.21-4.88 25.21-14.727 0-4.9-3.428-8.857-10.395-11.956l-31.1-13.254c-11.473-5.187-20.001-11.473-25.584-18.923-5.495-7.517-8.286-16.133-8.286-25.98 0-13.78 5.802-24.88 17.275-33.32C909.6 4.198 924.942 0 944.02 0c6.198 0 13.342.55 21.254 1.56 7.978 1.078 15.649 2.396 23.034 4.023zM107.477 5.583v29.781c-15.43-5.824-29.144-8.77-41.167-8.77-7.143 0-12.791 1.32-17.055 3.87-4.264 2.57-6.44 5.736-6.44 9.472 0 4.967 4.88 9.385 14.572 13.342l28.001 13.626c22.55 10.792 33.804 25.122 33.804 43.123 0 14.968-5.978 26.902-17.913 35.738-12.022 8.924-28.001 13.341-48.068 13.341-9.231 0-17.54-.395-24.902-1.23-7.363-.792-15.737-2.419-25.188-4.748v-31.166c17.276 5.824 32.947 8.77 46.97 8.77 16.835 0 25.21-4.88 25.21-14.727 0-4.9-3.408-8.857-10.31-11.956l-31.1-13.254c-11.56-5.187-20.088-11.473-25.583-18.923C2.725 64.355 0 55.739 0 45.892c0-13.78 5.759-24.88 17.297-33.32C28.771 4.198 44.134 0 63.212 0c6.264 0 13.319.55 21.32 1.56 7.912 1.078 15.582 2.396 22.945 4.023zM185.173 2.791v153.524h-45.607V2.79zM333.487 156.315H220.45V2.79h111.653v28.376H264.34v34.045h58.772v25.583h-58.772v35.739h69.146zM358.697 156.315V2.79h55.673l38.001 93.983 39.76-93.983h52.882v153.524h-42.576V55.058L458.262 157.72h-26.287L389.49 55.058v101.257zM693.263 156.315H580.226V2.79h111.652v28.376h-67.391v34.045h58.772v25.583h-58.772v35.739h68.776zM851.905 156.315h-48.374l-54.286-98.466v98.466h-30.773V2.79h49.784l52.881 96.774V2.791h30.768z"/></g>
-              </svg>
+          <h1 class="large-title">Selected work focused on what actually matters</h1>
+          <div class="work-content">
+            <div class="work-cnn">
+              <div class="work-text">
+                <h1>Koi Spaces CRO-Focused website</h1>
+                <p>
+                  Concept website for a custom furniture studio built around clarity, balance, and intentional living. The design translates the brand’s calm, refined aesthetic into a structured digital experience, where layout, spacing, and visual hierarchy guide users effortlessly. Focused messaging and conversion-led elements support enquiries, while the overall system reflects a cohesive approach to design, craftsmanship, and user experience.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="https://www.figma.com/design/dmCKaSQrzQfBaNOKEqR0WQ/Koi-Spaces?node-id=1-5" target="_blank" rel="noopener noreferrer">
+                  <button class="btn btn-primary">Figma file</button>
+                </a>
+                  <!--<a href="#MISSING LINK"><button class="btn btn-secondary">Preview website</button></a>-->
+              </div>
+            </div>  
+            <a class="work-image" href="https://www.figma.com/design/dmCKaSQrzQfBaNOKEqR0WQ/Koi-Spaces?node-id=1-5" target="_blank" rel="noopener noreferrer" data-tooltip="View full design">  
+              <img src="img/koispaces-thumbnail.jpg" alt="A beige living room corner faded background and a koi fish logo in the forefront">
             </a>
-        </div>
+          </div>
+          <div class="work-content"> 
+            <a class="work-image" href="https://www.figma.com/design/CULrOU3YTaOW5QtqDgeb3H/Sun-Ninja-redesign?node-id=9-2" target="_blank" rel="noopener noreferrer" data-tooltip="View full design">  
+              <img src="img/sun_ninja_thumbnail.jpg" alt="A couple enjoying a beach day under a Sun ninja tent faded background with the sun ninja logo in the forefront.">
+            </a>
+            <div class="work-cnn">
+              <div class="work-text">
+                <h1>Sun Ninja CRO-Focused Re-design</h1>
+                <p>
+                  Redesign of Sun Ninja’s homepage and product page to improve clarity, elevate brand perception, and support conversions. The layout focuses on strong visual hierarchy, intentional spacing, and consistent design patterns that guide users through the experience. Clear CTAs, benefit-led messaging, and trust elements are integrated to reduce friction and make purchasing decisions easier.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="https://www.figma.com/design/CULrOU3YTaOW5QtqDgeb3H/Sun-Ninja-redesign?node-id=9-2" target="_blank" rel="noopener noreferrer">
+                  <button class="btn btn-primary">Figma file</button>
+                </a>
+                  <!--<a href="#MISSING LINK"><button class="btn btn-secondary">Preview website</button></a>-->
+              </div>
+            </div>
+          </div>
+          <div class="work-content">
+            <div class="work-cnn">
+              <div class="work-text">
+                <h1>Bauen company website</h1>
+                <p>
+                  Concept website for a hypothetical German civil engineering firm, designed around clarity, efficiency, and trust. Built for a multi-region presence across six European locations, the brand and website work together to communicate expertise, streamline the user experience, and support conversion-focused decision-making. The result is a clean, structured digital presence that reflects Bauen’s professionalism and positions it as a dependable leader in a competitive market.
+                </p>
+              </div>
+              <div class="buttons">
+                <a href="https://www.figma.com/design/V4VcAgMAP2GArM6fA7L88r/Bauen-Website?node-id=1-3" target="_blank" rel="noopener noreferrer">
+                  <button class="btn btn-primary">Figma file</button>
+                </a>
+                  <!--<a href="#MISSING LINK"><button class="btn btn-secondary">Preview website</button></a>-->
+              </div>
+            </div>  
+            <a class="work-image" href="https://www.figma.com/design/V4VcAgMAP2GArM6fA7L88r/Bauen-Website?node-id=1-3" target="_blank" rel="noopener noreferrer" data-tooltip="View full design">  
+              <img src="img/bauen-thumbnail.jpg" alt="Sunset yellow background with black filled outlines of a construction site with a crane in the background.">
+            </a>
+          </div>
+          <div class="work-cv-text">
+              <h1>The way I design is the result of years refining what works</h1>
+              <p>6+ years of experience helping 50+ clients across 5 industries</p>
+            </div>
+            <div class="pain-point-button">
+              <a href="https://shlopen.github.io/RFCVPortfolio/files/RFCV.pdf" target="_blank" rel="noopener noreferrer">
+                <button class="btn btn-primary" popovertarget="contact-popover">View my experience</button>
+              </a>
+            </div>
       </section>
       <!-- END WORK SHOWCASE-->
       <div class="divider-wrapper2">
         <div class="divider-middle"></div>
       </div>
     </div>
-    <div class="wrapper1"> 
-      <!--SERVCIES SECTION-->
-      <section id="services" class="services">
-        <h1>My Services</h1>
-        <div class="services-grid">
-          <!-- Repeatable card 1-->
-          <div class="service-card">
-            <div class="card-header">
-              <img class="card-icon" aria-hidden="true" src="img/design-services.svg" alt="Web design icon, a pencil and a ruler crossed">
-                <svg class="card-decor" viewBox="0 0 100 20" preserveAspectRatio="none">
-                  <path d="M0,10 C25,0 75,20 100,10" fill="none" stroke="#FF7A00" stroke-width="1"/>
-                </svg>
-            </div>
-            <div class="card-body">
-              <h2>Web Design</h2>
-              <p>
-                I craft custom website designs that capture your brand and engage visitors.
-                Each layout is clean, responsive, and user-friendly, so your site always looks great on any device.
-              </p>
-            </div>
+    <!--Services-->
+    <section id="services" class="services">
+      <h1 class="large-title">
+        All you need to make your ideas clear and actionable.
+      </h1>
+      <div class="service-grid">
+        <!-- Repeatable card 1-->
+        <div class="service-card">
+          <div class="card-header">
+            <img class="card-icon" aria-hidden="true" src="img/pencil-ruler-bold.svg" alt="Web design icon, a pencil and a ruler crossed">
+            <h2>Web design & development</h2>
           </div>
-          <!-- Repeatable card 2-->
-          <div class="service-card">
-            <div class="card-header">
-              <img class="card-icon" aria-hidden="true" src="img/uxui-services.svg" alt="UX/UI design icon, a painter's pallet">
-                <svg class="card-decor" viewBox="0 0 100 20" preserveAspectRatio="none">
-                  <path d="M0,10 C25,0 75,20 100,10" fill="none" stroke="#FF7A00" stroke-width="1"/>
-                </svg>
-            </div>
-            <div class="card-body">
-              <h2>UX/UI Design</h2>
-              <p> I create intuitive user experiences and interfaces. 
-                By putting myself in your users’ shoes and understanding their needs, I ensure every digital interaction is simple and satisfying.</p>
-            </div>
-          </div>
-          <!-- Repeatable card 4-->
-          <div class="service-card">
-            <div class="card-header">
-              <img class="card-icon" src="img/game-services.svg" alt="Game controller icon">
-                <svg class="card-decor" aria-hidden="true" viewBox="0 0 100 20" preserveAspectRatio="none">
-                  <path d="M0,10 C25,0 75,20 100,10" fill="none" stroke="#FF7A00" stroke-width="1"/>
-                </svg>
-            </div>
-            <div class="card-body">
-              <h2>Game Design</h2>
-              <p>
-                I design fun game concepts or gamified features for your projects. 
-                By focusing on engaging mechanics and storytelling, I create experiences that keep players coming back for more.
-              </p>
+          <div class="card-body">
+            <p>
+              We start by getting clear on your business, audience, and objectives.</br>
+              No assumptions just a focused understanding of what your website needs to achieve.
+            </p>
+            <div class="service-FUDs">
+              <div class="FUD">
+                <img src="img/check-badge.svg" alt="">
+                <p>Websites from scratch</p>
+              </div>
+              <div class="FUD">
+                <img src="img/check-badge.svg" alt="">
+                <p>Redesigns</p>
+              </div>
+              <div class="FUD">
+                <img src="img/check-badge.svg" alt="">
+                <p>Landing pages</p>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <!--END SERVICE SECTION-->
-      <div class="divider-wrapper2">
+        <!-- Repeatable card 2-->
+        <div class="service-card">
+          <div class="card-header">
+            <img class="card-icon" aria-hidden="true" src="img/palette-bold.svg" alt="UX/UI design icon, a painter's pallet">
+            <h2>UX/UI & product design</h2>
+          </div>
+          <div class="card-body">
+            <p>
+              Good design should do more than look polished.
+              I improve how your site works, how users move through it, and how effectively it turns attention into results.
+            </p>
+            <div class="service-FUDs">
+              <div class="FUD">
+                <img src="img/check-badge.svg" alt="">
+                <p>CRO improvements</p>
+              </div>
+              <div class="FUD">
+                <img src="img/check-badge.svg" alt="">
+                <p>Website audits</p>
+              </div>
+              <div class="FUD">
+                <img src="img/check-badge.svg" alt="">
+                <p>Design systems</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Repeatable card 3-->
+        <div class="service-card">
+          <div class="card-header">
+            <img class="card-icon" aria-hidden="true" src="img/film-slate-bold.svg" alt="UX/UI design icon, a painter's pallet">
+            <h2>Brand & media design</h2>
+          </div>
+          <div class="card-body">
+            <p>
+              Start by getting clear of your business, audience, and objectives.</br>
+              No assumptions just a focused understanding of what your website needs to achieve.
+            </p>
+            <div class="service-FUDs">
+              <div class="FUD">
+                <img src="img/check-badge.svg" alt="">
+                <p>Social media posts</p>
+              </div>
+              <div class="FUD">
+                <img src="img/check-badge.svg" alt="">
+                <p>Posters & Banners</p>
+              </div>
+              <div class="FUD">
+                <img src="img/check-badge.svg" alt="">
+                <p>Digital assets</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="pain-point-button">
+          <button class="btn btn-primary" popovertarget="contact-popover">Contact</button>
+        </div>
+    </section>
+    <!--End Services-->
+    <!--Last call-->
+    <section class="last-call">
+      <div class="last-call-cnn">
+        <div class="last-call-txt">
+          <h1>Your ideas deserve to be understood not overlooked.</h1>
+          <div class="last-FUD-cnn">
+            <div class="last-FUD">
+              <img src="img/check-badge.svg" alt="">
+              <p>Built Around Real Behavior:</br>
+              Decisions backed by data, not trends.</p>
+            </div>
+            <div class="last-FUD">
+              <img src="img/check-badge.svg" alt="">
+              <p>Fixed scope & pricing:</br>
+              No scope creep, no last-minute surprises.</p>
+            </div>
+            <div class="last-FUD">
+              <img src="img/check-badge.svg" alt="">
+              <p>Transparent Handover:</br>
+              Full docs and training so your team owns the site.</p>
+            </div>
+          </div>
+        </div>
+          <form class="contact-form-cnn">
+            <label for="fname">Full name</label></br>
+            <input type="text" id="fname" name="fname" placeholder="John Smith"></br>
+            <label for="email">E-mail</label></br>
+            <input type="email" id="email" name="email" placeholder="Name@domain.com"></br>
+            <label for="contactn">Phone number</label></br>
+            <input type="tel" id="contactn" name="contactn" placeholder="+351 912345678"></br>
+            <label for="message">Message</label></br>
+            <textarea id="message" name="message" placeholder="Tell me abour your project..."></textarea><br>
+            <button type="submit" class="btn btn-primary">Contact</button>
+          </form>
+      </div>
+    </section>
+    <!--End Last call-->
+    <div class="divider-wrapper2">
         <div class="divider-bottom"></div>
-      </div> 
-      <!--FOOTER--> 
-    </div>       
-    <footer class="footer">
+    </div> 
+    <!--FOOTER-->     
+    <footer class="footer" aria-label="Footer">
       <div class="footer-cta">
         <p>Have a vision?</p>
-        <p class="highlight">Let’s make it happen!</p>
-        <button class="btn btn-secondary" popovertarget="contact-popover">Contact</button>
+        <p class="highlight">Make it be seen!</p>
+        <button class="btn btn-primary" popovertarget="contact-popover">Contact</button>
       </div>
       <div class="footer-links">
         <h3>Contacts</h3>
@@ -271,7 +451,7 @@
         <a href="https://shlopen.github.io/RFCVPortfolio/files/RFCV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
         <a href="https://www.linkedin.com/in/rui-faria-068886214/" target="_blank" rel="noopener noreferrer">LinkedIn</a>        
         <a href="https://github.com/Shlopen/RFCVPortfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <small>Last update: Feb 20, 2026</small>
+        <small>Last update: Apr 6, 2026</small>
       </div>
     </footer> 
     <!--END FOOTER-->       
