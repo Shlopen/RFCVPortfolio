@@ -855,6 +855,18 @@ textarea{
   min-height: 3rem;
 }
 
+input:user-invalid,
+textarea:user-invalid{
+  border-color: #D32F2F;
+  outline: none;
+}
+
+input:user-valid,
+textarea:user-valid{
+  border-color: #2FD32F;
+  outline: none;
+}
+
 input::placeholder{
   opacity: 70%;
 }

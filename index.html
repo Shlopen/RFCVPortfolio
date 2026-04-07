@@ -421,15 +421,37 @@
             </div>
           </div>
         </div>
-          <form class="contact-form-cnn">
+          <form class="contact-form-cnn" 
+            action="https://formspree.io/f/xaqlakzo"
+            method="POST">
+
             <label for="fname">Full name</label></br>
-            <input type="text" id="fname" name="fname" placeholder="John Smith"></br>
+            <input type="text" 
+              id="fname" 
+              name="fname" 
+              placeholder="John Smith"
+              required minlength="2"></br>
+
             <label for="email">E-mail</label></br>
-            <input type="email" id="email" name="email" placeholder="Name@domain.com"></br>
+            <input type="email" 
+              id="email" 
+              name="email" 
+              placeholder="Name@domain.com"
+              required></br>
+
             <label for="contactn">Phone number</label></br>
-            <input type="tel" id="contactn" name="contactn" placeholder="+351 912345678"></br>
+            <input type="tel" 
+              id="contactn" 
+              name="contactn" 
+              placeholder="+351 912345678"
+              pattern="[\+]?[0-9\s\-]{7,15}"
+              required></br>
+
             <label for="message">Message</label></br>
-            <textarea id="message" name="message" placeholder="Tell me abour your project..."></textarea><br>
+            <textarea id="message" 
+              name="message" 
+              placeholder="Tell me abour your project..."
+              required minlength="10"></textarea></br>
             <button type="submit" class="btn btn-primary">Contact</button>
           </form>
       </div>
